@@ -1,0 +1,58 @@
+
+  .experience_container{
+width:50%;
+background:var(--color-bg-variant);
+padding: 1rem;
+border-radius: 1rem;
+padding-bottom: 3rem;
+border:1px solid transparent
+
+
+  }
+  .experience_container:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant) !important;
+  }
+  .Biplus{
+    font-weight: 600 !important;
+  }
+  .accordionhead{
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+  }
+  .btns{
+    display: flex;
+    gap:1rem;
+    padding: 2rem;
+  
+   justify-content: center;
+   
+  }
+  .compny{
+    text-align: center;
+margin-top: .5rem;
+  }
+  .compnyname{
+    display: flex;
+ padding: 1rem;
+   
+   
+  }
+  .logoWebsoul{
+    width: 40px;
+    height: 40px;
+    
+  }
+  @media screen and (max-width:1024px) {
+    .experience_container{
+        width:70%;
+  
+ }
+  
+}
+ @media screen and (max-width:600px) {
+   .experience_container{
+    width:var(--container-width-ms)
+   }
+  
+ }
