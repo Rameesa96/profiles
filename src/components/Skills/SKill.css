@@ -28,17 +28,19 @@
         grid-template-columns:repeat(3,1fr) ;
     }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:640px){
     .skill_container{
         grid-template-columns:1fr 1fr ;
+        padding-left: 4rem;
     }
     .btn1{
         width:150px;}
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:415px){
     .skill_container{
         grid-template-columns: 1fr ;
-        padding: 1rem;
+        padding-left: 2rem;
+      
     } 
     .btn1{
         width:90%;
