@@ -4,6 +4,7 @@ import performer from '../../assets/performer.jpeg'
 import bestteam from '../../assets/bestteam.jpeg'
 import bestloyal from '../../assets/bestloyal.jpeg'
 import loyality from '../../assets/loyality.jpeg'
+import node from '../../assets/node.png'
 import './Testimonial.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -17,6 +18,9 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 function Testimonial() {
   const data=[
+    {
+      img:node
+    },
     {
       img:cyber
     },
