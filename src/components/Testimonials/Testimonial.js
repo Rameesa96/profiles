@@ -18,11 +18,12 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 function Testimonial() {
   const data=[
-    {
-      img:node
-    },
+ 
     {
       img:cyber
+    },
+    {
+      img:node
     },
     {
       img:performer
