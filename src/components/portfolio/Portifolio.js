@@ -36,7 +36,7 @@ const Portifolio = () => {
 <img src={social} className="portimg"alt="" />
   <h3>Social Media App(utilized Node js)</h3>
   <div className="portfolio_cta">
-  <a href="https://github.com/Rameesa96/Profile" className='btn'> Github</a>
+  <a href="https://github.com/Rameesa96/socialmedia" className='btn'> Github</a>
   
   </div>
   
