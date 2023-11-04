@@ -21,7 +21,7 @@ const About = () => {
               <FaAward className='abouticons'/>
               
               <h5>Experience</h5>
-              <small>6 month working experience</small>
+              <small>more than 1 year<br/> working experience</small>
             </article>
             <article className="aboutcardcontent">
               <VscFolderLibrary className='abouticons'/>
@@ -35,18 +35,10 @@ const About = () => {
             </article>
             
           </div>
-          <p className='aboutme'>I am a self learned Full Stack Developer,currently Working as a Web developer intern in Websoullabs.I have 6 month experience in MERN Stack.
-          I passionate about Web developing .My aim is to become a great developer and I believe in myself that I achieve all my goals.</p>
+          <p className='aboutme'>I am a self-taught Full Stack Developer with a current role as a Software Engineer at Citrus Informatics. Prior to this, I gained six months of experience as a web developer at Websoul Labs. My skill set includes proficiency in React, Astro, TypeScript, JavaScript, Node.js, and MongoDB.</p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
-
         </div>
-
       </div>
-     
-
-
-
-      
     </section>
   )
 }
