@@ -7,7 +7,23 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import {BiPlus} from 'react-icons/bi'
 import {BiCheck} from 'react-icons/bi'
+import ExperienceList from './experienceList';
 import './Experience.css'
+const websoullabsdescription =[
+  "Reviews, analyses, develops, and modifies web applications",
+  "Backend development by Creating Several Rest APIs and Using Mongodb as database",
+  "Involved in all phases of the SDLC (Software Development Life Cycle) ",
+  "Work closely with testers,designers, web designers, and project managers to create a robust and effective application.",
+  "Cooperate with designers to create clean interfaces and simple, intuitive interactions and experiences",
+  "Build modern-day UI components to improvise application performance."
+]
+const citrusdescription =[
+  "Specialize in development, harnessing the power of cutting-edge technologies such as Astro and React",
+  "Using typescript and javascript as coding language",
+  "Have experience in API integration and have implemented various impressive functionalities",
+  "Have conducted extensive research and actively pursued the latest technologies to expand my knowledge.",
+  "Committed to collaborating closely with my team to continually enhance my technical knowledge and skills",
+]
 function Experience() {
   const [state ,setState]=useState(true)
   return (
@@ -19,59 +35,14 @@ function Experience() {
       <button className='btn btn-primary' onClick={()=>{setState(true)}}>Experience</button>
       <button className='btn btn-primary' onClick={()=>{setState(false)}}>Education</button>
       </div>
-      {state?<Accordion sx={{backgroundColor:'#ffa62b'}}>
-        <AccordionSummary
-        className='Biplus'
-          expandIcon={<BiPlus />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className='accordionhead'>Web Developer  (May 2021-Present)</Typography>
-        
-        </AccordionSummary>
-        <AccordionDetails sx={{backgroundColor:'#f1c587'}}>
-          <div className='compnyname'>
-          <img src="https://www.websoullabs.com/assets/logo50.png" className='logoWebsoul' alt="logo"/>
-          <h4 className='compny'>Company Name:Websoullabs</h4>
-          </div>
-          <ul className='service_list'>
-            <li >
-              <BiCheck className='service_listicon'/>
-              <p>Reviews, analyses, develops, and modifies web applications </p>
-            </li>
-            <li >
-              <BiCheck className='service_listicon'/>
-              <p>Backend development by Creating Several Rest APIs and Using Mongodb as database </p>
-            </li>
-            <li >
-              <BiCheck className='service_listicon'/>
-              <p>Involved in all phases of the SDLC (Software Development Life Cycle) 
- </p>
-            </li>
-            <li >
-              <BiCheck className='service_listicon'/>
-              <p>Leverage our knowledge about Mern stack , HTML, CSS.
-</p>
-            </li>
-            <li >
-              <BiCheck className='service_listicon'/>
-              <p> Work closely with testers,
-designers, web designers, and project managers to create a robust and effective
-application.
-</p>
-            </li>
-            <li >
-              <BiCheck className='service_listicon'/>
-              <p>Cooperate with designers to create clean interfaces and simple, intuitive interactions
-and experiences</p>
-            </li>
-            <li >
-              <BiCheck className='service_listicon'/>
-              <p>Build modern-day UI components to improvise application performance. </p>
-            </li>
-          </ul>
-        </AccordionDetails>
-      </Accordion>:<><Accordion sx={{backgroundColor:'#ffa62b'}}>
+      {state?
+      <>
+      <ExperienceList description={citrusdescription} Employer="Citrus Informatics"
+      designation="Software Engineer(February 2023 - Present)" />
+      <ExperienceList description={websoullabsdescription} Employer="Websoullabs"
+       designation="Web Developer (June 2022 - December 2022)"/>
+       </>
+     :<><Accordion sx={{backgroundColor:'#ffa62b'}}>
         <AccordionSummary
         className='Biplus'
           expandIcon={<BiPlus />}
